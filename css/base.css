@@ -64,3 +64,10 @@ body {
   color: white;
   text-align: center;
 }
+
+
+@media (max-width: 1399px){
+  .container {
+    width: 100%
+  }
+}

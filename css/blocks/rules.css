@@ -72,3 +72,12 @@ ol {
 .button-container > *+*{
     margin-left: 8rem;
 }
+
+@media (max-width: 1399px){
+    .container-1 {
+      width: 100%
+    }
+    .block{
+        width: 70%
+    }
+}

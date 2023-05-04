@@ -26,6 +26,7 @@
     align-items: center;
 
 }
+
 .header-login > *+*{
     margin-left: 35px;
 }
@@ -65,5 +66,19 @@
 }
 
 @media (max-width: 1399px){
-    .container
+    .header-logo{
+        max-width: 30%; 
+        height: auto;
+        justify-content: center;
+    }
+
+    .header-row{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .header-nav{
+        display: none;
+    }
 }

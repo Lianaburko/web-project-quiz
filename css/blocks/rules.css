@@ -6,18 +6,17 @@
     margin-bottom: 20px;
     padding: 40px 0;
     position: relative;
-    background-color: #430303;
+    background-color: #5b1111;
     text-align: center;
     display: flex;
     justify-content: center;
     font-size: 44px;
     font-weight: bold;
     line-height: 150px;
-    cursor: pointer;
     align-items: center;
     text-decoration: none;
     box-shadow: 0 0 100px rgba(0,0,0,0.5);
-    border: 2px solid #af1515; /* задаем толщину и цвет обводки */
+    border: 2px solid #787878; /* задаем толщину и цвет обводки */
 }  
 
 .block{
@@ -42,6 +41,8 @@ ol {
 }
 
 .button-container{
+    width: 100%;
+    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,14 +50,14 @@ ol {
 
 .button, a.button{
     display: inline-block;
-    background-color: #530707;
+    background-color: #5b1111;
     min-height: 51px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-    border: 2px solid #530707; /* задаем толщину и цвет обводки */
+    border: 2px solid #787878;
     font-size: 20px;
     font-weight: 400;
     border-radius: 4px;
@@ -75,9 +76,16 @@ ol {
 
 @media (max-width: 1399px){
     .container-1 {
-      width: 100%
+      width: 100%;
+      font-size: 5rem;
     }
+
     .block{
         width: 70%
+    }
+    
+    .button, a.button{
+        height: 30%;
+        width: 30%;
     }
 }

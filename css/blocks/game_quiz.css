@@ -172,7 +172,11 @@ footer .next_btn:hover{
 
 
 
-
+@media (max-width: 1399px){
+    .quiz_box{
+        width: 100%;
+    }
+  }
 
 
 

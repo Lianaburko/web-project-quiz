@@ -6,7 +6,7 @@
     margin-bottom: 20px;
     padding: 40px 0;
     position: relative;
-    background-color: #5b1111;
+    background-color: #6b1111;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -50,7 +50,7 @@ ol {
 
 .button, a.button{
     display: inline-block;
-    background-color: #5b1111;
+    background-color: #6b1111;
     min-height: 51px;
     display: flex;
     justify-content: center;

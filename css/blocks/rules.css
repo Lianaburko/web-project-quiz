@@ -16,7 +16,7 @@
     align-items: center;
     text-decoration: none;
     box-shadow: 0 0 100px rgba(0,0,0,0.5);
-    border: 2px solid #787878; /* задаем толщину и цвет обводки */
+    /* border: 2px solid #787878;  задаем толщину и цвет обводки */
 }  
 
 .block{
@@ -42,7 +42,7 @@ ol {
 
 .button-container{
     width: 100%;
-    margin-top: 2rem;
+    margin-top: 3vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,14 +50,14 @@ ol {
 
 .button, a.button{
     display: inline-block;
-    background-color: #6b1111;
+    background-color: #af1515;
     min-height: 51px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding-left: 50px;
     padding-right: 50px;
-    border: 2px solid #787878;
+    border: 2px solid #af1515;
     font-size: 20px;
     font-weight: 400;
     border-radius: 4px;
@@ -71,7 +71,7 @@ ol {
 }
 
 .button-container > *+*{
-    margin-left: 8rem;
+    margin-left: 5vw;
 }
 
 @media (max-width: 1399px){

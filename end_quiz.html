@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Resets -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <!-- Blocks -->
+    <link rel="stylesheet" href="./css/blocks/end_quiz.css">
+    <link rel="stylesheet" href="./css/blocks/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+    <title>Результат</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-row">
+                <div class="header-logo" onclick="window.location.href='index.html'"><img src="./img/logo.png" alt="logo" style="max-width: 100%;"></div>  
+                <div class="header-nav"> ПРАВИЛА ИГРЫ </div>     
+                <div class="header-nav"> Что наша жизнь? Игра! </div>        
+            </div>
+        </div>
+    </header>
+    <div class="container_for_rb">
+        <div class="result_box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete_text"> Вы прошли квиз </div>
+            <div class="score_text"> 
+                <span> Вы ответили на <p>2</p> из 5 вопросов. Вы быдло.</span>
+            </div>
+            <div class="buttons">
+                <button class="restart" onclick="window.location.href='settings.html'"> Заново </button>
+                <button class="quit" onclick="window.location.href='index.html'"> Назад </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

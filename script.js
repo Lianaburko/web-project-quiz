@@ -1,6 +1,7 @@
 let que_count = 0;
-let total_amount = 5; 
+let total_amount = localStorage.getItem("number_of_questions"); 
 let timeValue = 15;
+let corrAnsw = 0;
 let tickIcon = '<div class="icon tick"><i class="fas fa-check"></i></div>'
 let crossIcon = '<div class="icon cross"><i class="fas fa-times"></i></div>'
 let counter;
@@ -60,6 +61,7 @@ function optionSelected(answer){
     if (userAns == correctAns){
         answer.classList.add("correct");
         answer.insertAdjacentHTML("beforeend", tickIcon);
+        corrAnsw++; 
     }
     else{
         answer.classList.add("incorrect");
@@ -112,3 +114,5 @@ function startTimerLine(time){
         }
     }
 }
+
+localStorage.setItem("number_of_corr_Answ", corrAnsw);

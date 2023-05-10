@@ -7,9 +7,9 @@ function changeColorCategory(category) {
     
     // добавляем класс "active" к выбранной категории
     category.classList.add('active');
-  }
+}
 
-  function changeColorMode(category) {
+function changeColorMode(category) {
     // удаляем класс "active" у всех категорий
     const categories = document.querySelectorAll('.mode');
     categories.forEach((item) => {
@@ -18,13 +18,18 @@ function changeColorCategory(category) {
     
     // добавляем класс "active" к выбранной категории
     category.classList.add('active');
-  }
+}
 
 
-  const questionsInput = document.querySelector("#questions")
-  const questionsValue = document.getElementById("questions-value");
-  
-  questionsInput.addEventListener("input", () => {
+const questionsInput = document.querySelector("#questions")
+const questionsValue = document.getElementById("questions-value");
+localStorage.setItem("number_of_questions", 5);
+
+
+questionsInput.addEventListener("input", () => {
     questionsValue.textContent = `${questionsInput.value} вопросов`;
-  });
+    localStorage.setItem("number_of_questions", questionsInput.value);
+});
   
+
+

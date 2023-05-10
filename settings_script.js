@@ -7,6 +7,12 @@ function changeColorCategory(category) {
     
     // добавляем класс "active" к выбранной категории
     category.classList.add('active');
+     // получаем номер категории из атрибута data-category
+    const categoryNumber = category.getAttribute('data-category');
+    
+     // сохраняем номер категории в localStorage
+    localStorage.setItem("active_cat", categoryNumber);
+
 }
 
 function changeColorMode(category) {
@@ -29,7 +35,4 @@ localStorage.setItem("number_of_questions", 5);
 questionsInput.addEventListener("input", () => {
     questionsValue.textContent = `${questionsInput.value} вопросов`;
     localStorage.setItem("number_of_questions", questionsInput.value);
-});
-  
-
-
+}); 

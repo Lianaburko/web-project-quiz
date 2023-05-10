@@ -13,7 +13,37 @@ const timeCount = quiz_box.querySelector(".timer .timer_sec");
 const timeLine = quiz_box.querySelector("header .time_line");
 //const result_box = 'end_quiz.html';
 
-// first question: 
+let n = parseInt(localStorage.getItem("active_cat")); 
+
+
+function getRandomIndex(arrayLength) {
+    return Math.floor(Math.random() * arrayLength);
+  }
+  
+function getRandomElements(array, total_amount) {
+    const result = [];
+    const arrayCopy = array.slice();
+  
+    if (total_amount > arrayCopy.length) {
+      return arrayCopy;
+    }
+  
+    for (let i = 0; i < total_amount; i++) {
+      const randomIndex = getRandomIndex(arrayCopy.length);
+      const randomElement = arrayCopy[randomIndex];
+  
+      result.push(randomElement);
+      arrayCopy.splice(randomIndex, 1);
+    }
+  
+    return result;
+}
+  
+const catNElements = elements.filter((element) => element.cat === n);
+  
+const questions = getRandomElements(catNElements, total_amount);
+
+
 
 startTimer(timeValue);
 showQuestions(que_count);
@@ -36,10 +66,11 @@ next_btn.onclick =()=>{
     }
 }
 
+// numb
 function showQuestions(index){
     const que_text = document.querySelector(".que_text");
-    
-    let que_tag = '<span>' +  questions[index].numb + '. ' + questions[index].question + '</span>';
+    console.log(index)
+    let que_tag = '<span>' +  (que_count+1) + '. ' + questions[index].question + '</span>';
     let option_tag = '<div class="option"><span>'+ questions[index].options[0] +'</span></div>' +
                      '<div class="option"><span>'+ questions[index].options[1] +'</span></div>' +
                      '<div class="option"><span>'+ questions[index].options[2] +'</span></div>' +
